@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Download the official Constipated Unicorn installer for Windows." />
+    <title>Constipated Unicorn Installer</title>
+    <style>
+      :root {
+        --bg: #f5efe8;
+        --panel: #fffdfb;
+        --ink: #1f1c1a;
+        --muted: #665d58;
+        --accent: #e76f51;
+        --accent-dark: #c9553a;
+        --line: #e7dfd5;
+        --green: #4c8a69;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #f8f2ed 0%, #f1e5dc 100%);
+        color: var(--ink);
+      }
+      .wrap {
+        width: min(980px, 100%);
+        margin: 40px 20px;
+        background: rgba(255,255,255,0.82);
+        border: 1px solid rgba(255,255,255,0.6);
+        border-radius: 24px;
+        box-shadow: 0 30px 80px rgba(32, 24, 19, 0.12);
+        overflow: hidden;
+      }
+      .top {
+        padding: 30px 40px 24px;
+        background: linear-gradient(135deg, #fffaf7 0%, #f9efe8 100%);
+        border-bottom: 1px solid var(--line);
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+      }
+      .brand-mark {
+        width: 26px;
+        height: 26px;
+        border-radius: 8px;
+        display: inline-grid;
+        place-items: center;
+        background: linear-gradient(135deg, var(--accent), #f0a37b);
+        color: white;
+        font-size: 12px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+      .main {
+        padding: 34px 40px 40px;
+      }
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: rgba(231,111,81,0.12);
+        color: var(--accent-dark);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 0.96;
+        letter-spacing: -0.06em;
+      }
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.01rem;
+      }
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 28px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+        color: white;
+        text-decoration: none;
+        font-weight: 800;
+        box-shadow: 0 14px 30px rgba(231,111,81,0.28);
+      }
+      .meta {
+        padding: 34px 26px 40px;
+        background: linear-gradient(180deg, #faf5f2 0%, #f7efe8 100%);
+        border-left: 1px solid var(--line);
+      }
+      .card {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px 18px;
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+      .badge {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 8px 12px;
+        border-radius: 10px;
+        background: #f4eee9;
+        border: 1px solid var(--line);
+        font-weight: 700;
+        font-size: 0.8rem;
+      }
+      ul {
+        margin: 18px 0 0;
+        padding-left: 20px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      @media (max-width: 760px) {
+        .content { grid-template-columns: 1fr; }
+        .meta { border-left: 0; border-top: 1px solid var(--line); }
+        .top, .main, .meta { padding-left: 22px; padding-right: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="top">
+        <div class="brand"><span class="brand-mark">✦</span>Constipated Unicorn</div>
+      </header>
+
+      <div class="content">
+        <section class="main">
+          <div class="eyebrow">Official installer</div>
+          <h1>Download Constipated Unicorn 0.1</h1>
+          <p>Get the Windows desktop installer for the live chat app with rooms, direct messages, emoji reactions, and file sharing.</p>
+          <a class="download-btn" href="./downloads/Constipated%20Unicorn%20Setup.exe" download>Download installer</a>
+        </section>
+
+        <aside class="meta">
+          <div class="card">
+            <h2>About this download</h2>
+            <p>This installer is the official Windows version of Constipated Unicorn. It installs the app like a normal program and launches from your desktop or Start menu.</p>
+            <div class="badge">Windows · 91 MB</div>
+            <ul>
+              <li>Realtime chat</li>
+              <li>Private rooms</li>
+              <li>Emoji reactions</li>
+              <li>File sharing</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </body>
+</html>
